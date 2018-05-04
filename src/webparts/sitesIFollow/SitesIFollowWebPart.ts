@@ -5,7 +5,6 @@ import { BaseClientSideWebPart, IPropertyPaneConfiguration, PropertyPaneTextFiel
 import * as strings from 'SitesIFollowWebPartStrings';
 import SitesIFollow from './components/SitesIFollow';
 import { ISitesIFollowProps } from './components/ISitesIFollowProps';
-import { sp } from "@pnp/sp";
 
 export interface ISitesIFollowWebPartProps {
   title: string;
@@ -14,18 +13,11 @@ export interface ISitesIFollowWebPartProps {
 
 export default class SitesIFollowWebPart extends BaseClientSideWebPart<ISitesIFollowWebPartProps> {
 
-  public onInit(): Promise<void> {
-    return super.onInit().then(_ => {
-      sp.setup({
-        spfxContext: this.context
-      });
-    });
-  }
-
   public render(): void {
     const element: React.ReactElement<ISitesIFollowProps > = React.createElement(
       SitesIFollow,
       {
+        context: this.context,
         title: this.properties.title,
         displayMode: this.displayMode,
         updateProperty: (value: string) => {

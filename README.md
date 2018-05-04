@@ -15,7 +15,6 @@ Creating the project was done for my own learning, and to collect a set of good 
 
 This example project demonstrates some important prinicipals for building custom SPFx webparts:
 
-* PnP JS for calls to SharePoint APIs (https://github.com/pnp/pnpjs)
 * PnP SPFx Controls to provide default title experience like 1. party WebParts (https://sharepoint.github.io/sp-dev-fx-controls-react/controls/WebPartTitle/)
 * SPFx localization for English and Norwegian (https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/guidance/localize-web-parts)
 * Office UI Fabric React instead of Office UI Fabric Core (https://docs.microsoft.com/en-us/sharepoint/dev/spfx/office-ui-fabric-integration)

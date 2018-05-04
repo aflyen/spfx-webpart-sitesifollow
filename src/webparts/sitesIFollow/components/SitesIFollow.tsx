@@ -30,7 +30,7 @@ export default class SitesIFollow extends React.Component<ISitesIFollowProps, IS
     // Set up services
     this._service = (Environment.type === EnvironmentType.Test || Environment.type === EnvironmentType.Local) ?
       new MockFollowedSiteService() :
-      new FollowedSiteService();
+      new FollowedSiteService(this.props.context);
 
     // Get the sites the user follows from service
     let sites: IFollowedSite[] = await this._service.getSites(this.props.urlFilter);
