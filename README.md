@@ -1,6 +1,15 @@
 # spfx-webpart-sitesifollow
 
-This solutions is a basic WebPart build with [SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/sharepoint-framework-overview) for SharePoint Online. The webpart allows you to list all the sites you follow in a sorted order. It is also possible to filter the list based on a URL filter. This webpart itself is not very interessting, and have been demonstrated many other times. The idea of this project is to provide a best practise project for my self to demonstrate a set of principals I believe should be considered when developing webparts.
+This solutions is a basic WebPart build with [SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/sharepoint-framework-overview) for SharePoint Online. The webpart allows you to list all the sites you follow in a sorted order. It is also possible to filter the list based on a URL filter. 
+
+![Example showing the "Sites I follow" webpart](./assets/example.png)
+
+## Not only a sample - but a full implementation
+What this webpart does it not unique, and have been demonstrated many other times.
+
+The idea of this project is not to provide a specific code sample for a WebPart, but a demonstration of a full implementation from start to end, ready for production.
+
+Creating the project was done for my own learning, and to collect a set of good principals and guidelines from many of my former SPFx projects. At the time of writing I recommend using this baseline for any SPFx projects to maintain a minimal standard expected when delievering solutions to your clients.
 
 ## Recommondations
 
@@ -14,7 +23,7 @@ This example project demonstrates some important prinicipals for building custom
 * SASS for styling (https://docs.microsoft.com/en-us/sharepoint/dev/spfx/css-recommendations)
 * Office UI Fabric components (https://docs.microsoft.com/en-us/sharepoint/dev/spfx/office-ui-fabric-integration)
 * Reactive configuration of webpart properties (https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/basics/integrate-with-property-pane)
-* Service layer for keeping a clean user interface code design in React
+* Service layer with mock service enabling local development and good separation in the user interface
 * Placeholder for guiding users when no content is available
 
 ## Getting started
