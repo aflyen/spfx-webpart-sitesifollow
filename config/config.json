@@ -1,0 +1,19 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sites-i-follow-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sitesIFollow/SitesIFollowWebPart.js",
+          "manifest": "./src/webparts/sitesIFollow/SitesIFollowWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SitesIFollowWebPartStrings": "lib/webparts/sitesIFollow/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

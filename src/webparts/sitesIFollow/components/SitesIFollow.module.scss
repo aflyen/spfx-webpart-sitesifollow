@@ -1,0 +1,37 @@
+@import '~office-ui-fabric-react/dist/sass/_References.scss';
+
+.sitesIFollow {
+  @include ms-Grid-row;
+
+  .followedSite {
+    @include ms-Grid-col;
+    @include ms-sm12;
+
+    padding: 8px 16px 8px 0;
+    border-bottom: 1px solid #eaeaea;
+
+    a {
+      font-size: ms-fontSize-m;
+      color: "[theme:primaryText, default:#333]";
+      text-decoration: none;
+
+      &:visited {
+        color: "[theme:primaryText, default:#333]"
+      }
+    }
+
+    .followedSiteIcon {
+      cursor: pointer;
+      padding: 0 8px 0 8px;
+      color: "[theme: themePrimary, default: #0078d7]";
+
+      &:hover {
+        color: "[theme: themeDarker, default: #004578]"
+      }
+    }
+
+    &:hover {
+      background-color: "[theme: themeLighterAlt, default: #eff6fc]";
+    }
+  }
+}
